@@ -1,0 +1,28 @@
+{
+  "name": "your-package-name",
+  "version": "1.0.0",
+  "description": "your-package-description",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "your-package-keyward-1",
+    "your-package-keyward-2"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.21",
+    "@types/react-dom": "^16.9.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
